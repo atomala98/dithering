@@ -6,7 +6,8 @@ P1(2:end-1) = 2*P1(2:end-1);
 f = Fs*(0:(L/2))/L;
 plot(f, P1);
 set(gca, 'XScale', 'log');
-set(gca, 'YScale', 'log');
+%set(gca, 'YScale', 'log');
+ylim([0 0.05])
 xlabel("Frequency [Hz]");
 ylabel("Amplitude");
 end
